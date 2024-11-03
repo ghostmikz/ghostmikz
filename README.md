@@ -21,4 +21,4 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=GhostMikz&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+![LeetCode Stats](https://leetcode.card.workers.dev/ghostmikz?theme=dark&font=baloo&extension=activity)
