@@ -8,9 +8,6 @@
 # 💻 Tech Stack:
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-# 📊 LeetCode Stats:
-![LeetCode Stats](https://leetcode.card.workers.dev/ghostmikz?theme=dark&font=baloo&extension=activity)
-
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=GhostMikz&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=GhostMikz&theme=dark&hide_border=false)<br/>
