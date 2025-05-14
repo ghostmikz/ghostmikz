@@ -6,9 +6,13 @@
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/MugetsuZ) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/often_delusional) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ghostcraft0330@gmail.com) 
 
 # 💻 Tech Stack:
-- ![Linux](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg)
-- ![C](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/C_Programming_Language.svg/800px-C_Programming_Language.svg.png)
-- ![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png)
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/C_Programming_Language.svg/800px-C_Programming_Language.svg.png" width="20" height="20"> C
+- <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="20" height="20"> C++
+- <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="20" height="20"> Linux
+- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Terminal_Icon.svg" width="20" height="20"> Linux Terminal
+- <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Unix_logo.svg" width="20" height="20"> Unix
+- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/HTML5_logo_and_wordmark.svg" width="20" height="20"> HTML
+- <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" width="20" height="20"> CSS
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=ghostmikz&theme=catppuccin_mocha&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=ghostmikz&theme=catppuccin_mocha&hide_border=false)<br/>
