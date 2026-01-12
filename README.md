@@ -3,8 +3,8 @@
 <td valign="top">
 <pre>
        ⢀⣤⣶⣶⣖⣦⣄⡀
-   ⢀⣾⡟⣉⣽⣿⢿⡿⣿⣿⣆
-  ⢠⣿⣿⣿⡗⠋⠙⡿⣷⢌⣿⣿
+    ⢀⣾⡟⣉⣽⣿⢿⡿⣿⣿⣆
+   ⢠⣿⣿⣿⡗⠋⠙⡿⣷⢌⣿⣿
 ⣷⣄⣀⣿⣿⣿⣿⣷⣦⣤⣾⣿⣿⣿⡿
 ⠈⠙⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀
    ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠻⠿⠿⠋
@@ -27,13 +27,12 @@
 <b>Focus</b>:     Data Structures & Algorithms
 <b>Terminal</b>:  Kitty
 <b>Status</b>:    Building and improving
-<b>Contact</b>:   <a href="mailto:chingunjav.ariuntur@gmail.com">chingunjav.ariuntur@gmail.com</a>
-       
-●     ●     ●     ●     ●     ●     ●
+<b>Contact</b>:   <a href="mailto:chingunjav.ariuntur@gmail.com">chingunjav.ariuntur@gmail.com</a>   ●    ●    ●    ●    ●    ●    ●
 </pre>
 </td>
 </tr>
 </table>
+
 <pre>
 > [ghostmikz@terminal ~]$ _
 </pre>
