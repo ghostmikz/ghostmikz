@@ -1,5 +1,19 @@
 # 💫 About Me:
-# ░▒▓ ~ /home/ghostmikz<br><br>          .----------.          **ghostmikz**<br>         /          /           ------------<br>        /   ______ /            **User**: ghostmikz<br>       /   /      /             **Role**: Software Engineering Student<br>      /   /      /              **Language**: C++<br>     /   /      /               **Activity**: Problem Solving<br>    /   /      /                **Focus**: Fundamentals & Learning<br>   /   /      /                 **Status**: Building and improving<br>  /   /______/                  <br> /          /                   [●] [●] [●] [●] [●] [●] [●] [●]<br>'----------'<br><br>> [ghostmikz@terminal ~]$ _
+# ░▒▓ ~ /home/ghostmikz
+
+          .----------.          **ghostmikz**
+         /          /           ------------
+        /   ______ /            **User**: ghostmikz
+       /   /      /             **Role**: Software Engineering Student
+      /   /      /              **Language**: C++
+     /   /      /               **Activity**: Problem Solving
+    /   /      /                **Focus**: Fundamentals & Learning
+   /   /      /                 **Status**: Building and improving
+  /   /______/                  
+ /          /                   [●] [●] [●] [●] [●] [●] [●] [●]
+'----------'
+
+> [ghostmikz@terminal ~]$ _
 
 
 # 💻 Tech Stack:
