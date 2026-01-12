@@ -20,7 +20,7 @@
 <b>ghostmikz</b>
 --------------------------------------------
 <b>User</b>:      ghostmikz
-<b>OS</b>:        Fedora Linux (Workstation Edition)
+<b>OS</b>:        Fedora Linux
 <b>Role</b>:      Software Engineering Student
 <b>Language</b>:  C++ / C
 <b>Activity</b>:  Low-level Problem Solving
