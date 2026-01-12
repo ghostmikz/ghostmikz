@@ -18,14 +18,16 @@
 <td valign="top">
 <pre>
 <b>ghostmikz</b>
-------------
-<b>User</b>:     ghostmikz
-<b>Role</b>:     Software Engineering Student
-<b>Language</b>: C++
-<b>Activity</b>: Problem Solving
-<b>Focus</b>:    Fundamentals & Learning
-<b>Status</b>:   Building and improving
-<b>Contact</b>:  chingunjav.ariuntur@gmail.com
+--------------------------------------------
+<b>User</b>:      ghostmikz
+<b>OS</b>:        Fedora Linux (Workstation Edition)
+<b>Role</b>:      Software Engineering Student
+<b>Language</b>:  C++ / C
+<b>Activity</b>:  Low-level Problem Solving
+<b>Focus</b>:     Data Structures & Algorithms
+<b>Terminal</b>:  Kitty
+<b>Status</b>:    Building and improving
+<b>Contact</b>:   <a href="mailto:chingunjav.ariuntur@gmail.com">chingunjav.ariuntur@gmail.com</a>
 
 <font color="#ff5555">●</font> <font color="#55ff55">●</font> <font color="#ffff55">●</font> <font color="#5555ff">●</font> <font color="#ff55ff">●</font> <font color="#55ffff">●</font> <font color="#eeeeee">●</font>
 </pre>
@@ -36,7 +38,6 @@
 <pre>
 > [ghostmikz@terminal ~]$ _
 </pre>
-
 
 # 💻 Tech Stack:
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Blazor](https://img.shields.io/badge/blazor-%235C2D91.svg?style=for-the-badge&logo=blazor&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)
