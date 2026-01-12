@@ -1,17 +1,20 @@
+```
 # ░▒▓ ~ /home/ghostmikz
 
-          ######           **ghostmikz**
-        ##########         ------------
-       ####      ####      **User**: ghostmikz
-      ####                 **Role**: Software Engineering Student
-      ####                 **Language**: C++
-      ####                 **Activity**: Problem Solving
-       ####      ####      **Focus**: Fundamentals & Learning
-        ##########         **Status**: Building and improving
-          ######
-                           [●] [●] [●] [●] [●] [●] [●] [●]
+       ⢀⣤⣶⣶⣖⣦⣄⡀          **ghostmikz**
+    ⢀⣾⡟⣉⣽⣿⢿⡿⣿⣿⣆       ------------
+   ⢠⣿⣿⣿⡗⠋⠙⡿⣷⢌⣿⣿        **User**: ghostmikz
+⣷⣄⣀⣿⣿⣿⣿⣷⣦⣤⣾⣿⣿⣿⡿       **Role**: Software Engineering Student
+⠈⠙⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀      **Language**: C++
+   ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠻⠿⠿⠋    **Activity**: Problem Solving
+    ⠹⣿⣿⣿⣿⣿⣿⣿⣿⡇         **Focus**: Fundamentals & Learning
+     ⠈⢿⣿⣿⣿⣿⣿⣿⣇         **Status**: Building and improving
+       ⠙⢿⣿⣿⣿⣿⣿⣆        **Contact**: chingunjav.ariuntur@gmail.com
+         ⠈⠻⣿⣿⣿⣿⣷⣶⣴⣾⠏ 
+            ⠈⠉⠛⠛⠛⠋⠁     [●] [●] [●] [●] [●] [●] [●] [●]
 
 > [ghostmikz@terminal ~]$ _
+```
 
 
 # 💻 Tech Stack:
