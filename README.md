@@ -35,7 +35,6 @@
 </td>
 </tr>
 </table>
-
 <pre>
 > [ghostmikz@terminal ~]$ _
 </pre>
