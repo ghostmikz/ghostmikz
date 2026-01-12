@@ -28,6 +28,7 @@
 <b>Terminal</b>:  Kitty
 <b>Status</b>:    Building and improving
 <b>Contact</b>:   <a href="mailto:chingunjav.ariuntur@gmail.com">chingunjav.ariuntur@gmail.com</a>
+       
 ●     ●     ●     ●     ●     ●     ●
 </pre>
 </td>
