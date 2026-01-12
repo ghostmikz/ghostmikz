@@ -1,20 +1,41 @@
-```
-# ░▒▓ ~ /home/ghostmikz
+<table>
+<tr>
+<td valign="top">
+<pre>
+       ⢀⣤⣶⣶⣖⣦⣄⡀
+   ⢀⣾⡟⣉⣽⣿⢿⡿⣿⣿⣆
+  ⢠⣿⣿⣿⡗⠋⠙⡿⣷⢌⣿⣿
+⣷⣄⣀⣿⣿⣿⣿⣷⣦⣤⣾⣿⣿⣿⡿
+⠈⠙⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀
+   ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠻⠿⠿⠋
+    ⠹⣿⣿⣿⣿⣿⣿⣿⣿⡇
+     ⠈⢿⣿⣿⣿⣿⣿⣿⣇
+       ⠙⢿⣿⣿⣿⣿⣿⣆
+         ⠈⠻⣿⣿⣿⣿⣷⣶⣴⣾⠏
+            ⠈⠉⠛⠛⠛⠋⠁
+</pre>
+</td>
+<td valign="top">
+<pre>
+<b>ghostmikz</b>
+------------
+<b>User</b>:     ghostmikz
+<b>Role</b>:     Software Engineering Student
+<b>Language</b>: C++
+<b>Activity</b>: Problem Solving
+<b>Focus</b>:    Fundamentals & Learning
+<b>Status</b>:   Building and improving
+<b>Contact</b>:  <a href="mailto:your-email@example.com">Email</a> / <a href="https://t.me/yourusername">Telegram</a>
 
-       ⢀⣤⣶⣶⣖⣦⣄⡀          **ghostmikz**
-    ⢀⣾⡟⣉⣽⣿⢿⡿⣿⣿⣆       ------------
-   ⢠⣿⣿⣿⡗⠋⠙⡿⣷⢌⣿⣿        **User**: ghostmikz
-⣷⣄⣀⣿⣿⣿⣿⣷⣦⣤⣾⣿⣿⣿⡿       **Role**: Software Engineering Student
-⠈⠙⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀      **Language**: C++
-   ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠻⠿⠿⠋    **Activity**: Problem Solving
-    ⠹⣿⣿⣿⣿⣿⣿⣿⣿⡇         **Focus**: Fundamentals & Learning
-     ⠈⢿⣿⣿⣿⣿⣿⣿⣇         **Status**: Building and improving
-       ⠙⢿⣿⣿⣿⣿⣿⣆        **Contact**: chingunjav.ariuntur@gmail.com
-         ⠈⠻⣿⣿⣿⣿⣷⣶⣴⣾⠏ 
-            ⠈⠉⠛⠛⠛⠋⠁     [●] [●] [●] [●] [●] [●] [●] [●]
+<font color="#ff5555">●</font> <font color="#55ff55">●</font> <font color="#ffff55">●</font> <font color="#5555ff">●</font> <font color="#ff55ff">●</font> <font color="#55ffff">●</font> <font color="#eeeeee">●</font>
+</pre>
+</td>
+</tr>
+</table>
 
+<pre>
 > [ghostmikz@terminal ~]$ _
-```
+</pre>
 
 
 # 💻 Tech Stack:
