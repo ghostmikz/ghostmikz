@@ -5,9 +5,11 @@
 
 <hr/>
 
-<p align="center">
-  <span style="font-size:25px; font-weight:bold;">Software Engineering undergraduate from Mongolia</span>
-</p>
+<div align="center">
+
+### Software Engineering undergraduate from Mongolia
+
+</div>
 
 <br/>
 
@@ -43,10 +45,11 @@
 
 <hr>
 
+<div align="center">
 
-<p align="center">
-  <span style="font-size:25px; font-weight:bold;">Languages, Frameworks & Tools</span>
-</p>
+### Languages, Frameworks & Tools
+
+</div>
 
 <br/>
 <div align="center">
