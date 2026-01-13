@@ -53,8 +53,12 @@
 
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,javascript" />
-    <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql" /><br>
+    <div>
+        <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,javascript" />
+    </div>
+    <div>
+        <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql" />
+    </div>
 </div>
 <hr/>
 
