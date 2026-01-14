@@ -7,7 +7,7 @@
 
 <div align="center">
 
-### Software Engineering undergraduate from Mongolia
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&duration=1&repeat=false&width=435&lines=Software+Engineering+undergraduate+from+Mongolia)](https://git.io/typing-svg)
 
 </div>
 
