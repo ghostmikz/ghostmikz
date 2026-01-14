@@ -1,17 +1,13 @@
 <div align="center">
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=4000&pause=1000&width=435&lines=Hi+%F0%9F%91%8B+My+name+is+Chingunjav)](https://git.io/typing-svg)
-</div>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=568DF7&vCenter=true&width=580&lines=Hi+%F0%9F%91%8B+My+name+is+Chingunjav" alt="Typing SVG" /></a>
 
 <hr/>
 
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&repeat=false&width=720&lines=Software+Engineering+undergraduate+from+Mongolia" alt="Typing SVG" /></a>
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&color=568DF7&repeat=false&width=720&lines=Software+Engineering+undergraduate+from+Mongolia)](https://git.io/typing-svg)
 </div>
-
-<br/>
 
 <div align="center">
 
@@ -47,11 +43,10 @@
 
 <div align="center">
 
-### Languages, Frameworks & Tools
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&color=568DF7&repeat=false&width=435&lines=Languages%2C+Frameworks+%26+Tools" alt="Typing SVG" /></a>
 
 </div>
 
-<br/>
 <div align="center">
     <div>
         <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,javascript" />
