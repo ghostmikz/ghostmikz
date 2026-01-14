@@ -2,7 +2,7 @@
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=568DF7&vCenter=true&width=580&lines=Hi+%F0%9F%91%8B+My+name+is+Chingunjav" alt="Typing SVG" /></a>
 
-<hr/>
+---
 
 <div align="center">
 
@@ -39,7 +39,7 @@
 
 </div>
 
-<hr>
+---
 
 <div align="center">
 
@@ -55,6 +55,5 @@
         <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql" />
     </div>
 </div>
-<hr/>
 
-
+---
