@@ -35,7 +35,7 @@
 
 ---
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&pause=1&center=true&vCenter=true&repeat=false&width=800&lines=System+Analytics" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&pause=1&center=true&vCenter=true&repeat=false&width=800&lines=GitHub+Analytics" alt="Typing SVG" />
   <br />
   <table border="0">
     <tr>
