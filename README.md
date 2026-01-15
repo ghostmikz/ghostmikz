@@ -39,11 +39,11 @@
   <br />
   <table border="0">
     <tr>
-      <td align="center" valign="top">
-        <img src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true" height="170" alt="ghostmikz stats" />
+      <td valign="top">
+        <img src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true" height="195" alt="ghostmikz stats" />
       </td>
-      <td align="center" valign="top">
-        <img src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true" height="170" alt="ghostmikz langs" />
+      <td valign="top">
+        <img src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true" height="194" alt="ghostmikz langs" />
       </td>
     </tr>
   </table>
