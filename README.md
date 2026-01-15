@@ -43,7 +43,7 @@
         <img src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true&hide_title=true" height="150" alt="stats" />
       </td>
       <td valign="top">
-        <img src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true&hide_title=true" height="150" alt="langs" />
+        <img src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true&hide_title=true" height="160" alt="langs" />
       </td>
     </tr>
   </table>
