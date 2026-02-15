@@ -6,13 +6,13 @@
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&pause=1&center=true&vCenter=true&repeat=false&width=800&lines=Software+Engineering+Undergraduate" alt="Typing SVG" />
-
-  **🧠 Currently Learning:** Desktop Application Development (Java/C#)
-  **💻 OS:** Fedora (Sway) & Debian (GNOME)
-  **📜 Areas of Focus:** Algorithmic Efficiency & Backend Logic
-  **⌨️ Performance:** 163 WPM | Terminal-Centric Workflow
-  **🏆 Competitive:** Codeforces & LeetCode  
-  **👥 Open to:** Open-source contributions  
+<br><br>
+  **🧠 Currently Learning:** Desktop Application Development (Java/C#) <br>
+  **💻 OS:** Fedora (Sway) & Debian (GNOME) <br>
+  **📜 Areas of Focus:** Algorithmic Efficiency & Backend Logic <br>
+  **⌨️ Performance:** 163 WPM | Terminal-Centric Workflow <br>
+  **🏆 Competitive:** Codeforces & LeetCode <br>
+  **👥 Open to:** Open-source contributions
 </div>
 
 <div align="center">
