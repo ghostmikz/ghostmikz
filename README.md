@@ -34,7 +34,7 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&pause=1&center=true&vCenter=true&repeat=false&width=800&lines=Tech+Stack+%26+Environment" alt="Typing SVG" />
   <br />
-  <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,js" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,js,docker" />
   <br />
   <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql" />
 </div>
