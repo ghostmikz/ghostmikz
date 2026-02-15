@@ -7,9 +7,10 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&pause=1&center=true&vCenter=true&repeat=false&width=800&lines=Software+Engineering+Undergraduate" alt="Typing SVG" />
 
-  **🧠 Learning:** Blazor and .NET  
-  **⌨️ Typing:** 163 WPM  
-  **💻 Skills:** C# and Problem Solving  
+  **🧠 Currently Learning:** Desktop Application Development (Java/C#)
+  **💻 OS:** Fedora (Sway) & Debian (GNOME)
+  **📜 Areas of Focus:** Algorithmic Efficiency & Backend Logic
+  **⌨️ Performance:** 163 WPM | Terminal-Centric Workflow
   **🏆 Competitive:** Codeforces & LeetCode  
   **👥 Open to:** Open-source contributions  
 </div>
