@@ -7,7 +7,7 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=1&pause=1&center=true&vCenter=true&repeat=false&width=800&lines=Software+Engineering+Undergraduate" alt="Typing SVG" />
 
-  **🧠 Currently Learning:** Desktop Application Development (Java/C#)
+  **🧠 Currently Learning:** Blazor Web Development (.NET)
   <br>
   **💻 OS:** Fedora (Sway) & Debian (GNOME)
   <br>
