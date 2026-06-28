@@ -13,6 +13,11 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=800&color=29B6F6&center=true&vCenter=true&width=820&lines=Software+Engineering+Undergraduate;Backend+Logic+%2B+Algorithmic+Efficiency;Terminal-Centric+Workflow+%7C+163+WPM" alt="Typing SVG" />
 </div>
 
+<div align="center">
+  <a href="https://github.com/ghostmikz?tab=followers"><img src="https://img.shields.io/github/followers/ghostmikz?label=Follow&style=social" alt="followers" /></a>
+  <img src="https://komarev.com/ghpvc/?username=ghostmikz&label=Profile%20views&color=29B6F6&style=flat" alt="profile views" />
+</div>
+
 <br/>
 
 <!-- ===== ABOUT (Persona status-panel style, no code) ===== -->
@@ -21,16 +26,12 @@
 </div>
 
 <div align="center">
-
-
-| | |
-| **NOW LEARNING** | Blazor &nbsp;·&nbsp; .NET |
-| **FOCUS** | Backend Logic &nbsp;·&nbsp; Algorithmic Efficiency |
-| **SYSTEMS** | Fedora (Sway) &nbsp;·&nbsp; Debian (GNOME) |
-| **WORKFLOW** | Terminal-centric &nbsp;·&nbsp; 163 WPM |
-| **ARENA** | Codeforces &nbsp;·&nbsp; LeetCode |
-| **OPEN TO** | Open-source contributions |
-
+  <img src="https://img.shields.io/badge/NOW%20LEARNING-Blazor%20%C2%B7%20.NET-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=dotnet&logoColor=29B6F6" alt="learning" /><br/>
+  <img src="https://img.shields.io/badge/FOCUS-Backend%20Logic%20%C2%B7%20Algorithms-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=codecademy&logoColor=29B6F6" alt="focus" /><br/>
+  <img src="https://img.shields.io/badge/SYSTEMS-Fedora%20(Sway)%20%C2%B7%20Debian%20(GNOME)-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=linux&logoColor=29B6F6" alt="systems" /><br/>
+  <img src="https://img.shields.io/badge/WORKFLOW-Terminal--centric%20%C2%B7%20163%20WPM-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=gnometerminal&logoColor=29B6F6" alt="workflow" /><br/>
+  <img src="https://img.shields.io/badge/ARENA-Codeforces%20%C2%B7%20LeetCode-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=codeforces&logoColor=29B6F6" alt="arena" /><br/>
+  <img src="https://img.shields.io/badge/OPEN%20TO-Open--source%20contributions-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=github&logoColor=29B6F6" alt="open to" />
 </div>
 
 <!-- ===== GRADIENT DIVIDER ===== -->
