@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-  <img src="status.svg" width="760" alt="Status" />
+  <img src="status.svg" width="100%" alt="Status" />
 </div>
 
 
