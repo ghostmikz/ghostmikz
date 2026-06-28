@@ -1,11 +1,6 @@
-<!-- ===== HEADER: decorative P3 wave (dark blue -> light blue) ===== -->
+<!-- ===== HEADER: custom animated banner with baked Bungee name ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1A40,50:0F52BA,100:29B6F6&height=150&section=header" width="100%" alt="header" />
-</div>
-
-<!-- ===== NAME in a cool Persona-style font (Bebas Neue) ===== -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Bebas+Neue&weight=700&size=80&duration=2200&pause=1000&color=29B6F6&center=true&vCenter=true&width=820&height=110&repeat=false&lines=CHINGUNJAV" alt="name" />
+  <img src="header.svg" width="100%" alt="CHINGUNJAV" />
 </div>
 
 <!-- ===== TYPING SUBTITLE ===== -->
@@ -22,7 +17,8 @@
 
 <!-- ===== ABOUT (Persona status-panel style, no code) ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A1A40,100:29B6F6&height=50&section=header&text=Status&fontSize=26&fontColor=FFFFFF" alt="status header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=500&height=55&repeat=false&lines=STATUS" alt="status header" /><br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
 </div>
 
 ```
@@ -39,7 +35,8 @@ OPEN TO       →  Open-source contributions
 
 <!-- ===== CONNECT (badges in a row) ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A1A40,100:29B6F6&height=50&section=header&text=Connect&fontSize=26&fontColor=FFFFFF" alt="connect header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=500&height=55&repeat=false&lines=CONNECT" alt="connect header" /><br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
 </div>
 
 <p align="center">
@@ -55,7 +52,8 @@ OPEN TO       →  Open-source contributions
 
 <!-- ===== TECH STACK ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A1A40,100:29B6F6&height=50&section=header&text=Tech%20Stack&fontSize=26&fontColor=FFFFFF" alt="tech header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=600&height=55&repeat=false&lines=TECH+STACK" alt="tech header" /><br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
   <br/><br/>
   <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,js,docker&theme=dark&perline=8" /><br/>
   <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql&theme=dark&perline=8" />
@@ -68,7 +66,8 @@ OPEN TO       →  Open-source contributions
 
 <!-- ===== ANALYTICS ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A1A40,100:29B6F6&height=50&section=header&text=GitHub%20Analytics&fontSize=26&fontColor=FFFFFF" alt="analytics header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=700&height=55&repeat=false&lines=GITHUB+ANALYTICS" alt="analytics header" /><br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
   <br/><br/>
   <img height="165" src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true&count_private=true&include_all_commits=true&bg_color=0A1A40&title_color=29B6F6&icon_color=29B6F6&text_color=E6F7FF" alt="ghostmikz stats" />
   <img height="165" src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true&langs_count=8&bg_color=0A1A40&title_color=29B6F6&text_color=E6F7FF" alt="ghostmikz langs" />
@@ -76,5 +75,5 @@ OPEN TO       →  Open-source contributions
   <img height="165" src="https://streak-stats.demolab.com/?user=ghostmikz&hide_border=true&background=0A1A40&ring=29B6F6&fire=29B6F6&currStreakLabel=29B6F6&sideLabels=E6F7FF&dates=8899A6&stroke=29B6F6&sideNums=E6F7FF&currStreakNum=E6F7FF" alt="ghostmikz streak" />
 </div>
 
-<!-- ===== FOOTER WAVE (Persona 3 Reload) ===== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:29B6F6,50:0F52BA,100:0A1A40&height=130&section=footer" width="100%" alt="footer" />
+<!-- ===== FOOTER: custom animated banner (mirrored) ===== -->
+<img src="footer.svg" width="100%" alt="footer" />
