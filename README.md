@@ -3,14 +3,9 @@
   <img src="header.svg" width="100%" alt="CHINGUNJAV" />
 </div>
 
-<!-- ===== TYPING SUBTITLE ===== -->
+<!-- ===== TYPING SUBTITLE (custom scan-reveal animation) ===== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=800&color=29B6F6&center=true&vCenter=true&width=820&lines=Software+Engineering+Undergraduate;Backend+Logic+%2B+Algorithmic+Efficiency;Terminal-Centric+Workflow+%7C+163+WPM" alt="Typing SVG" />
-</div>
-
-<div align="center">
-  <a href="https://github.com/ghostmikz?tab=followers"><img src="https://img.shields.io/github/followers/ghostmikz?label=Follow&style=social" alt="followers" /></a>
-  <img src="https://komarev.com/ghpvc/?username=ghostmikz&label=Profile%20views&color=29B6F6&style=flat" alt="profile views" />
+  <img src="typing.svg" width="640" alt="Software Engineering Undergraduate" />
 </div>
 
 <br/>
