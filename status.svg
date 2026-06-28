@@ -16,7 +16,7 @@
       .arrow { fill:#9fd4f0; }
       .val   { fill:#EAF2FB; }
       text   { font-family:'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,'Courier New',monospace;
-               font-size:21px; font-weight:500; letter-spacing:0.5px; }
+               font-size:18px; font-weight:500; letter-spacing:0.5px; }
     </style>
   </defs>
 
@@ -30,28 +30,28 @@
 
     <!-- row 1 -->
     <text class="label" x="48"  y="58">NOW LEARNING</text>
-    <text class="arrow" x="312" y="58">&#8594;</text>
-    <text class="val"   x="352" y="58">Blazor · .NET</text>
+    <text class="arrow" x="272" y="58">&#8594;</text>
+    <text class="val"   x="312" y="58">Blazor · .NET</text>
     <!-- row 2 -->
     <text class="label" x="48"  y="91">FOCUS</text>
-    <text class="arrow" x="312" y="91">&#8594;</text>
-    <text class="val"   x="352" y="91">Backend Logic · Algorithmic Efficiency</text>
+    <text class="arrow" x="272" y="91">&#8594;</text>
+    <text class="val"   x="312" y="91">Backend Logic · Algorithmic Efficiency</text>
     <!-- row 3 -->
     <text class="label" x="48"  y="124">SYSTEMS</text>
-    <text class="arrow" x="312" y="124">&#8594;</text>
-    <text class="val"   x="352" y="124">Fedora (Sway) · Debian (GNOME)</text>
+    <text class="arrow" x="272" y="124">&#8594;</text>
+    <text class="val"   x="312" y="124">Fedora (Sway) · Debian (GNOME)</text>
     <!-- row 4 -->
     <text class="label" x="48"  y="157">WORKFLOW</text>
-    <text class="arrow" x="312" y="157">&#8594;</text>
-    <text class="val"   x="352" y="157">Terminal-centric · 163 WPM</text>
+    <text class="arrow" x="272" y="157">&#8594;</text>
+    <text class="val"   x="312" y="157">Terminal-centric · 163 WPM</text>
     <!-- row 5 -->
     <text class="label" x="48"  y="190">ARENA</text>
-    <text class="arrow" x="312" y="190">&#8594;</text>
-    <text class="val"   x="352" y="190">Codeforces · LeetCode</text>
+    <text class="arrow" x="272" y="190">&#8594;</text>
+    <text class="val"   x="312" y="190">Codeforces · LeetCode</text>
     <!-- row 6 -->
     <text class="label" x="48"  y="223">OPEN TO</text>
-    <text class="arrow" x="312" y="223">&#8594;</text>
-    <text class="val"   x="352" y="223">Open-source contributions</text>
+    <text class="arrow" x="272" y="223">&#8594;</text>
+    <text class="val"   x="312" y="223">Open-source contributions</text>
   </g>
 
   <rect x="0.75" y="0.75" width="878.5" height="258.5" rx="14" fill="none" stroke="#6cc2f0" stroke-opacity="0.25" stroke-width="1.5"/>
