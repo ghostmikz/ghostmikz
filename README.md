@@ -15,9 +15,14 @@
   <img src="sec-status.svg" width="100%" alt="STATUS" />
 </div>
 
-<div align="center">
-  <img src="status.svg" width="100%" alt="Status" />
-</div>
+```
+NOW LEARNING  →  Blazor · .NET
+FOCUS         →  Backend Logic · Algorithmic Efficiency
+SYSTEMS       →  Fedora (Sway) · Debian (GNOME)
+WORKFLOW      →  Terminal-centric · 163 WPM
+ARENA         →  Codeforces · LeetCode
+OPEN TO       →  Open-source contributions
+```
 
 
 <!-- ===== CONNECT (badges in a row) ===== -->
@@ -26,11 +31,11 @@
 </div>
 
 <p align="center">
-  <a href="mailto:chingunjav.ariuntur@gmail.com"><img src="https://img.shields.io/badge/Gmail-15356e?style=for-the-badge&logo=gmail&logoColor=6cc2f0&labelColor=102a59" /></a>
-  <a href="https://leetcode.com/u/ghostmikz/"><img src="https://img.shields.io/badge/LeetCode-15356e?style=for-the-badge&logo=leetcode&logoColor=6cc2f0&labelColor=102a59" /></a>
-  <a href="https://codeforces.com/profile/ghostmikz"><img src="https://img.shields.io/badge/Codeforces-15356e?style=for-the-badge&logo=codeforces&logoColor=6cc2f0&labelColor=102a59" /></a>
-  <a href="https://www.linkedin.com/in/ghostmikz/"><img src="https://img.shields.io/badge/LinkedIn-15356e?style=for-the-badge&logo=linkedin&logoColor=6cc2f0&labelColor=102a59" /></a>
-  <a href="https://www.instagram.com/absent.pulse/"><img src="https://img.shields.io/badge/Instagram-15356e?style=for-the-badge&logo=instagram&logoColor=6cc2f0&labelColor=102a59" /></a>
+  <a href="mailto:chingunjav.ariuntur@gmail.com"><img src="badge-gmail.svg" alt="Gmail" /></a>
+  <a href="https://leetcode.com/u/ghostmikz/"><img src="badge-leetcode.svg" alt="LeetCode" /></a>
+  <a href="https://codeforces.com/profile/ghostmikz"><img src="badge-codeforces.svg" alt="Codeforces" /></a>
+  <a href="https://www.linkedin.com/in/ghostmikz/"><img src="badge-linkedin.svg" alt="LinkedIn" /></a>
+  <a href="https://www.instagram.com/absent.pulse/"><img src="badge-instagram.svg" alt="Instagram" /></a>
 </p>
 
 
