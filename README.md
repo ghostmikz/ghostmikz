@@ -1,16 +1,16 @@
-<!-- ===== HEADER BANNER (gradient wave) ===== -->
+<!-- ===== HEADER BANNER (Persona 3 Reload: black -> electric blue) ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,12,20&height=200&section=header&text=Chingunjav&fontSize=68&fontColor=ffffff&fontAlignY=36&desc=Software%20Engineering%20Undergraduate&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:0066B3,100:00AEEF&height=210&section=header&text=Chingunjav&fontSize=70&fontColor=E6F7FF&fontAlignY=36&desc=Software%20Engineering%20Undergraduate&descSize=18&descAlignY=58&animation=twinkling" width="100%" alt="header" />
 </div>
 
 <!-- ===== TYPING SUBTITLE ===== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2500&pause=800&color=58A6FF&center=true&vCenter=true&width=820&lines=Backend+Logic+%2B+Algorithmic+Efficiency;Terminal-Centric+Workflow+%7C+163+WPM;Codeforces+%2B+LeetCode+Grinder" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2500&pause=800&color=00AEEF&center=true&vCenter=true&width=820&lines=Backend+Logic+%2B+Algorithmic+Efficiency;Terminal-Centric+Workflow+%7C+163+WPM;Codeforces+%2B+LeetCode+Grinder" alt="Typing SVG" />
 </div>
 
 <div align="center">
   <a href="https://github.com/ghostmikz?tab=followers"><img src="https://img.shields.io/github/followers/ghostmikz?label=Follow&style=social" alt="followers" /></a>
-  <img src="https://komarev.com/ghpvc/?username=ghostmikz&label=Profile%20views&color=58A6FF&style=flat" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=ghostmikz&label=Profile%20views&color=00AEEF&style=flat" alt="profile views" />
 </div>
 
 <br/>
@@ -50,30 +50,30 @@ const chingunjav = {
 </table>
 
 <!-- ===== GRADIENT DIVIDER ===== -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,12,20&height=2" width="100%" alt="divider" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:00AEEF&height=3" width="100%" alt="divider" />
 
-<!-- ===== TECH STACK ===== -->
+<!-- ===== TECH STACK (visible gradient banner) ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0D1117,100:1A2A3A&height=40&section=header&text=Tech%20Stack%20%26%20Environment&fontSize=20&fontColor=58A6FF&desc=&animation=fadeIn" alt="tech header" />
-  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:000000,100:00AEEF&height=48&section=header&text=Tech%20Stack%20%26%20Environment&fontSize=22&fontColor=E6F7FF&animation=twinkling" alt="tech header" />
+  <br/><br/>
   <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,js,docker&theme=dark&perline=8" /><br/>
   <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql&theme=dark&perline=8" />
 </div>
 
-<!-- ===== GRADIENT DIVIDER ===== -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,12,20&height=2" width="100%" alt="divider" />
+<br/>
 
-<!-- ===== ANALYTICS ===== -->
+<!-- ===== GRADIENT DIVIDER ===== -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:00AEEF&height=3" width="100%" alt="divider" />
+
+<!-- ===== ANALYTICS (visible gradient banner) ===== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0D1117,100:1A2A3A&height=40&section=header&text=GitHub%20Analytics&fontSize=20&fontColor=58A6FF&desc=&animation=fadeIn" alt="analytics header" />
-  <br/>
-  <img height="165" src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF" alt="ghostmikz stats" />
-  <img height="165" src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true&langs_count=8&bg_color=0D1117&title_color=58A6FF" alt="ghostmikz langs" />
-  <br/>
-  <img height="165" src="https://streak-stats.demolab.com/?user=ghostmikz&theme=react&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" alt="ghostmikz streak" />
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:000000,100:00AEEF&height=48&section=header&text=GitHub%20Analytics&fontSize=22&fontColor=E6F7FF&animation=twinkling" alt="analytics header" />
   <br/><br/>
-  <img src="https://github-profile-trophy.vercel.app/?username=ghostmikz&theme=onedark&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="trophies" />
+  <img height="165" src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true&count_private=true&include_all_commits=true&bg_color=000000&title_color=00AEEF&icon_color=00AEEF&text_color=E6F7FF" alt="ghostmikz stats" />
+  <img height="165" src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true&langs_count=8&bg_color=000000&title_color=00AEEF&text_color=E6F7FF" alt="ghostmikz langs" />
+  <br/>
+  <img height="165" src="https://streak-stats.demolab.com/?user=ghostmikz&hide_border=true&background=000000&ring=00AEEF&fire=00AEEF&currStreakLabel=00AEEF&sideLabels=E6F7FF&dates=8899A6&stroke=00AEEF&sideNums=E6F7FF&currStreakNum=E6F7FF" alt="ghostmikz streak" />
 </div>
 
-<!-- ===== FOOTER WAVE ===== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,12,20&height=120&section=footer" width="100%" alt="footer" />
+<!-- ===== FOOTER WAVE (Persona 3 Reload) ===== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00AEEF,50:0066B3,100:000000&height=130&section=footer&animation=twinkling" width="100%" alt="footer" />
