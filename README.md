@@ -22,8 +22,8 @@
 
 <div align="center">
 
+
 | | |
-|:--|:--|
 | **NOW LEARNING** | Blazor &nbsp;·&nbsp; .NET |
 | **FOCUS** | Backend Logic &nbsp;·&nbsp; Algorithmic Efficiency |
 | **SYSTEMS** | Fedora (Sway) &nbsp;·&nbsp; Debian (GNOME) |
