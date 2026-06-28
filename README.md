@@ -25,14 +25,14 @@
   <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A1A40,100:29B6F6&height=50&section=header&text=Status&fontSize=26&fontColor=FFFFFF" alt="status header" />
 </div>
 
-<div align="center">
-  <img src="https://img.shields.io/badge/NOW%20LEARNING-Blazor%20%C2%B7%20.NET-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=dotnet&logoColor=29B6F6" alt="learning" /><br/>
-  <img src="https://img.shields.io/badge/FOCUS-Backend%20Logic%20%C2%B7%20Algorithms-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=codecademy&logoColor=29B6F6" alt="focus" /><br/>
-  <img src="https://img.shields.io/badge/SYSTEMS-Fedora%20(Sway)%20%C2%B7%20Debian%20(GNOME)-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=linux&logoColor=29B6F6" alt="systems" /><br/>
-  <img src="https://img.shields.io/badge/WORKFLOW-Terminal--centric%20%C2%B7%20163%20WPM-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=gnometerminal&logoColor=29B6F6" alt="workflow" /><br/>
-  <img src="https://img.shields.io/badge/ARENA-Codeforces%20%C2%B7%20LeetCode-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=codeforces&logoColor=29B6F6" alt="arena" /><br/>
-  <img src="https://img.shields.io/badge/OPEN%20TO-Open--source%20contributions-29B6F6?style=for-the-badge&labelColor=0A1A40&logo=github&logoColor=29B6F6" alt="open to" />
-</div>
+```
+NOW LEARNING  →  Blazor · .NET
+FOCUS         →  Backend Logic · Algorithmic Efficiency
+SYSTEMS       →  Fedora (Sway) · Debian (GNOME)
+WORKFLOW      →  Terminal-centric · 163 WPM
+ARENA         →  Codeforces · LeetCode
+OPEN TO       →  Open-source contributions
+```
 
 <!-- ===== GRADIENT DIVIDER ===== -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="100%" alt="divider" />
