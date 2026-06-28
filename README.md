@@ -30,17 +30,13 @@ OPEN TO       →  Open-source contributions
   <img src="sec-connect.svg" width="100%" alt="CONNECT" />
 </div>
 
-<div align="center">
+<p align="center">
   <a href="mailto:chingunjav.ariuntur@gmail.com"><img src="badge-gmail.svg" alt="Gmail" /></a>
-  <br/>
   <a href="https://leetcode.com/u/ghostmikz/"><img src="badge-leetcode.svg" alt="LeetCode" /></a>
-  <br/>
   <a href="https://codeforces.com/profile/ghostmikz"><img src="badge-codeforces.svg" alt="Codeforces" /></a>
-  <br/>
   <a href="https://www.linkedin.com/in/ghostmikz/"><img src="badge-linkedin.svg" alt="LinkedIn" /></a>
-  <br/>
   <a href="https://www.instagram.com/absent.pulse/"><img src="badge-instagram.svg" alt="Instagram" /></a>
-</div>
+</p>
 
 
 <!-- ===== TECH STACK ===== -->
