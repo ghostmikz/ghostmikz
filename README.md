@@ -17,8 +17,7 @@
 
 <!-- ===== ABOUT (Persona status-panel style, no code) ===== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=500&height=55&repeat=false&lines=STATUS" alt="status header" /><br/>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
+  <img src="sec-status.svg" width="520" alt="STATUS" />
 </div>
 
 ```
@@ -35,8 +34,7 @@ OPEN TO       →  Open-source contributions
 
 <!-- ===== CONNECT (badges in a row) ===== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=500&height=55&repeat=false&lines=CONNECT" alt="connect header" /><br/>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
+  <img src="sec-connect.svg" width="520" alt="CONNECT" />
 </div>
 
 <p align="center">
@@ -52,8 +50,7 @@ OPEN TO       →  Open-source contributions
 
 <!-- ===== TECH STACK ===== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=600&height=55&repeat=false&lines=TECH+STACK" alt="tech header" /><br/>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
+  <img src="sec-tech.svg" width="520" alt="TECH STACK" />
   <br/><br/>
   <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,html,css,js,docker&theme=dark&perline=8" /><br/>
   <img src="https://skillicons.dev/icons?i=dotnet,vscode,vim,github,git,bash,linux,mysql&theme=dark&perline=8" />
@@ -66,8 +63,7 @@ OPEN TO       →  Open-source contributions
 
 <!-- ===== ANALYTICS ===== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Bungee&weight=800&size=30&pause=1000&color=29B6F6&center=true&vCenter=true&width=700&height=55&repeat=false&lines=GITHUB+ANALYTICS" alt="analytics header" /><br/>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A1A40,100:29B6F6&height=3" width="300" alt="bar" />
+  <img src="sec-analytics.svg" width="520" alt="GITHUB ANALYTICS" />
   <br/><br/>
   <img height="165" src="https://ghostmikz-stats.vercel.app/api?username=ghostmikz&show_icons=true&theme=react&hide_border=true&count_private=true&include_all_commits=true&bg_color=0A1A40&title_color=29B6F6&icon_color=29B6F6&text_color=E6F7FF" alt="ghostmikz stats" />
   <img height="165" src="https://ghostmikz-stats.vercel.app/api/top-langs/?username=ghostmikz&layout=compact&theme=react&hide_border=true&langs_count=8&bg_color=0A1A40&title_color=29B6F6&text_color=E6F7FF" alt="ghostmikz langs" />
