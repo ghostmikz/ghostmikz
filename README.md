@@ -1,17 +1,12 @@
 <div align="center">
 
-<!-- two independently-sized images: full-detail ASCII portrait + a neofetch
-     card sized to its own content. regenerate: python scripts/prep_photo.py <photo>
-     && python scripts/make_ascii_svg.py ; python scripts/make_info_card.py -->
+<!-- one unified terminal window: ASCII portrait + neofetch info panel, single
+     title bar and frame. regenerate: python scripts/prep_photo.py <photo> &&
+     python scripts/make_hero_svg.py -->
 
-<table>
-<tr>
-<td valign="top"><img src="./ghostmikz-ascii.svg" width="370" alt="ghostmikz — ASCII portrait" /></td>
-<td valign="top"><img src="./info-card.svg" width="490" alt="ghostmikz — role, education, stack, highlights" /></td>
-</tr>
-</table>
+<img src="./hero.svg" width="1260" alt="ghostmikz — ASCII portrait and neofetch-style info panel" />
 
-<br>
+<br><br>
 
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square)](mailto:chingunjav.ariuntur@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/ghostmikz/)
