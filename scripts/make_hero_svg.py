@@ -191,10 +191,11 @@ for i, row in enumerate(ROWS_INFO):
         continue
     x0 = CARD_X
     if kind == "host":
+        host_text = "ghostmikz@github"
         inner = (f'<text x="{x0}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700">'
                  f'<tspan fill="{GREEN}">ghostmikz</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
-                 f'<line x1="{x0+FONT_HOST*6.7:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
+                 f'<line x1="{x0 + len(host_text)*FONT_HOST*0.63 + 10:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "sec":
         title = esc(row[1])
