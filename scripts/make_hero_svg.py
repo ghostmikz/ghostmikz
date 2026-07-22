@@ -183,6 +183,9 @@ for ry, line in enumerate(rows_txt):
     )
 
 # ---- right: neofetch card --------------------------------------------
+MONO_RATIO = 0.6  # forced monospace advance width (via textLength) for exact divider alignment
+DIVIDER_GAP = 6
+
 y = CARD_TOP + LINE_H * 0.75
 for i, row in enumerate(ROWS_INFO):
     kind = row[0]
@@ -192,16 +195,21 @@ for i, row in enumerate(ROWS_INFO):
     x0 = CARD_X
     if kind == "host":
         host_text = "ghostmikz@github"
-        inner = (f'<text x="{x0}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700">'
+        host_w = len(host_text) * FONT_HOST * MONO_RATIO
+        inner = (f'<text x="{x0}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700" '
+                 f'textLength="{host_w:.1f}" lengthAdjust="spacing">'
                  f'<tspan fill="{GREEN}">ghostmikz</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
-                 f'<line x1="{x0 + len(host_text)*FONT_HOST*0.63 + 6:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
+                 f'<line x1="{x0 + host_w + DIVIDER_GAP:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "sec":
         title = esc(row[1])
-        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{SECTION}" font-size="{FONT_SEC}" font-weight="700">'
+        sec_text = f"— {row[1]}"
+        sec_w = len(sec_text) * FONT_SEC * MONO_RATIO
+        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{SECTION}" font-size="{FONT_SEC}" font-weight="700" '
+                 f'textLength="{sec_w:.1f}" lengthAdjust="spacing">'
                  f'&#8212; {title}</text>'
-                 f'<line x1="{x0 + FONT_SEC*0.9 + len(row[1])*FONT_SEC*0.63 + 6:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
+                 f'<line x1="{x0 + sec_w + DIVIDER_GAP:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "kv":
         key, val = esc(row[1]), esc(row[2])
