@@ -39,8 +39,9 @@ ACCENT = "#22d3ee"
 # ("gap",)                     -> vertical space
 ROWS = [
     ("host",),
-    ("kv", "Now", "Software Engineering Undergraduate"),
+    ("kv", "Now", "Software Engineer @ Smart Retail Systems"),
     ("kv", "Focus", "Backend Logic, Algorithmic Efficiency"),
+    ("kv", "Edu", "B.Eng Software Engineering, NMIT '28"),
     ("kv", "Systems", "Fedora (Sway), Debian (GNOME)"),
     ("kv", "Workflow", "Terminal-centric, 163 WPM"),
     ("gap",),

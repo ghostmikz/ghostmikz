@@ -34,7 +34,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ghostmikz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ghostmikz/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-ghostmikz-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/ghostmikz/)
 [![Codeforces](https://img.shields.io/badge/Codeforces-ghostmikz-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/ghostmikz)
-[![Instagram](https://img.shields.io/badge/Instagram-absent.pulse-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/absent.pulse/)
+[![Instagram](https://img.shields.io/badge/Instagram-mugetsu.zen-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/mugetsu.zen/)
 
 <br>
 
