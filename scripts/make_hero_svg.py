@@ -19,8 +19,8 @@ STATIC = bool(os.environ.get("STATIC"))
 
 # ---- shared chrome ----------------------------------------------------
 PAD = 24
-TITLEBAR_H = 90
-STATUS_H = 92
+TITLEBAR_H = 68
+STATUS_H = 70
 GAP = 44  # space between the two columns (divider line runs through it)
 
 BG = "#0d1117"
@@ -141,8 +141,8 @@ parts = [
     f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W:.0f}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
 ]
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
-    parts.append(f'<circle cx="{PAD + i*43}" cy="{TITLEBAR_H/2}" r="14" fill="{dotcol}"/>')
-parts.append(f'<text x="{CANVAS_W/2:.0f}" y="{TITLEBAR_H/2 + 13}" fill="{MUTED}" font-size="36" '
+    parts.append(f'<circle cx="{PAD + i*32}" cy="{TITLEBAR_H/2}" r="10.5" fill="{dotcol}"/>')
+parts.append(f'<text x="{CANVAS_W/2:.0f}" y="{TITLEBAR_H/2 + 9}" fill="{MUTED}" font-size="27" '
              f'text-anchor="middle">ghostmikz@github: ~$ whoami</text>')
 
 # vertical divider between the two columns
@@ -210,11 +210,11 @@ for i, row in enumerate(ROWS_INFO):
 
 # ---- shared bottom status bar ------------------------------------------
 status_line_y = TITLEBAR_H + BODY_H + PAD * 0.2
-status_y = status_line_y + 56
+status_y = status_line_y + 42
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W:.0f}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
-parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="36">'
+parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="27">'
              f'ghostmikz@github:~$ whoami <tspan fill="{INK}">Chingunjav (ghostmikz)</tspan></text>')
-parts.append(f'<rect x="{PAD+736}" y="{status_y-32:.1f}" width="20" height="38" fill="{INK}">'
+parts.append(f'<rect x="{PAD+551}" y="{status_y-24:.1f}" width="15" height="28" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 
