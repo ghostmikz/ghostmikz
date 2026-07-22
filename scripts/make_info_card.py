@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "info-card.svg")
 STATIC = bool(os.environ.get("STATIC"))
 
-W, H = 480, 376
+W, H = 480, 530
 PAD = 20
 TITLEBAR_H = 30
 KEY_X = PAD
@@ -48,7 +48,15 @@ ROWS = [
     ("sec", "Stack"),
     ("kv", "Languages", "C, C++, C#, Java, JavaScript"),
     ("kv", "Web", "HTML, CSS, Blazor, .NET"),
-    ("kv", "Tools", "Docker, Git, Vim, VS Code, MySQL"),
+    ("kv", "Databases", "MySQL"),
+    ("kv", "Tools", "Docker, Git, Vim, VS Code"),
+    ("gap",),
+    ("sec", "Connect"),
+    ("kv", "Mail", "chingunjav.ariuntur@gmail.com"),
+    ("kv", "LinkedIn", "/in/ghostmikz"),
+    ("kv", "LeetCode", "u/ghostmikz"),
+    ("kv", "Codeforces", "ghostmikz"),
+    ("kv", "Instagram", "@mugetsu.zen"),
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Competitive programmer: Codeforces & LeetCode"),
