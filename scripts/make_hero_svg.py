@@ -59,10 +59,13 @@ for y in range(ROWS):
     rows_txt.append("".join(chars))
 
 # ---- right column: neofetch rows ---------------------------------------
-CARD_W = 460
+CARD_W = 600
 KEY_X = 0
-VAL_X = 92
-LINE_H = 20.5
+VAL_X = 120
+LINE_H = 26.5
+FONT_KV = 16.0
+FONT_SEC = 15.0
+FONT_HOST = 18.0
 
 ROWS_INFO = [
     ("host",),
@@ -187,25 +190,25 @@ for i, row in enumerate(ROWS_INFO):
         continue
     x0 = CARD_X
     if kind == "host":
-        inner = (f'<text x="{x0}" y="{y:.1f}" font-size="14" font-weight="700">'
+        inner = (f'<text x="{x0}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700">'
                  f'<tspan fill="{GREEN}">ghostmikz</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
-                 f'<line x1="{x0+96}" y1="{y-4:.1f}" x2="{x0+CARD_W}" y2="{y-4:.1f}" '
+                 f'<line x1="{x0+120}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "sec":
         title = esc(row[1])
-        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{SECTION}" font-size="12.5" font-weight="700">'
+        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{SECTION}" font-size="{FONT_SEC}" font-weight="700">'
                  f'&#8212; {title}</text>'
-                 f'<line x1="{x0 + 12 + len(row[1])*8}" y1="{y-4:.1f}" x2="{x0+CARD_W}" y2="{y-4:.1f}" '
+                 f'<line x1="{x0 + 14 + len(row[1])*9.5}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "kv":
         key, val = esc(row[1]), esc(row[2])
-        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{KEY}" font-size="12.5" font-weight="700">{key}</text>'
-                 f'<text x="{x0+VAL_X}" y="{y:.1f}" fill="{INK}" font-size="12.5">{val}</text>')
+        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{KEY}" font-size="{FONT_KV}" font-weight="700">{key}</text>'
+                 f'<text x="{x0+VAL_X}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{val}</text>')
     elif kind == "bul":
         txt = esc(row[1])
-        inner = (f'<circle cx="{x0+3}" cy="{y-4:.1f}" r="2.5" fill="{GREEN}"/>'
-                 f'<text x="{x0+14}" y="{y:.1f}" fill="{INK}" font-size="12.5">{txt}</text>')
+        inner = (f'<circle cx="{x0+3.5}" cy="{y-5:.1f}" r="3" fill="{GREEN}"/>'
+                 f'<text x="{x0+16}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{txt}</text>')
     else:
         continue
     parts.append(rise(inner, i))
