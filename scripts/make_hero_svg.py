@@ -8,7 +8,7 @@ Portrait: python scripts/prep_photo.py <photo>  (writes source-prepped.png)
 Then:     python scripts/make_hero_svg.py        (writes hero.svg)
 STATIC=1 emits the frozen (no-animation) state for quick previews.
 """
-from PIL import Image, ImageEnhance
+from PIL import Image, ImageEnhance, ImageFilter
 import html
 import os
 
@@ -34,14 +34,15 @@ GREEN = "#3fb950"
 ACCENT = "#22d3ee"
 
 # ---- left column: ascii portrait ---------------------------------------
-COLS, ROWS = 92, 49
+COLS, ROWS = 104, 55
 CELL_W, CELL_H = 8, 15
 RAMP = " .`:-=+*cs#%@"
-CONTRAST, GAMMA, WHITE_FLOOR = 1.05, 1.18, 0.80
+CONTRAST, GAMMA, WHITE_FLOOR = 1.25, 1.1, 0.78
 ART_W, ART_H = COLS * CELL_W, ROWS * CELL_H
 ROW_DUR = STAGGER = 0.11
 
 im = Image.open(SRC).convert("L")
+im = im.filter(ImageFilter.UnsharpMask(radius=3, percent=180, threshold=2))
 im = ImageEnhance.Contrast(im).enhance(CONTRAST)
 im = im.resize((COLS, ROWS), Image.LANCZOS)
 px = im.load()
@@ -59,13 +60,13 @@ for y in range(ROWS):
     rows_txt.append("".join(chars))
 
 # ---- right column: neofetch rows ---------------------------------------
-CARD_W = 700
+CARD_W = 820
 KEY_X = 0
-VAL_X = 150
-LINE_H = 39.0
-FONT_KV = 23.0
-FONT_SEC = 21.0
-FONT_HOST = 25.0
+VAL_X = 180
+LINE_H = 46.5
+FONT_KV = 27.5
+FONT_SEC = 25.0
+FONT_HOST = 30.0
 
 ROWS_INFO = [
     ("host",),
