@@ -63,7 +63,7 @@ for y in range(ROWS):
 CARD_W = 740
 KEY_X = 0
 VAL_X = 150
-LINE_H = 40.0
+LINE_H = 30.0
 FONT_KV = 21.0
 FONT_SEC = 19.0
 FONT_HOST = 24.0
@@ -81,6 +81,13 @@ ROWS_INFO = [
     ("kv", "Web", "HTML, CSS, Blazor, .NET"),
     ("kv", "Databases", "MySQL"),
     ("kv", "Tools", "Docker, Git, Vim, VS Code"),
+    ("gap",),
+    ("sec", "Connect"),
+    ("kv", "Mail", "chingunjav.ariuntur@gmail.com"),
+    ("kv", "LinkedIn", "/in/ghostmikz"),
+    ("kv", "LeetCode", "u/ghostmikz"),
+    ("kv", "Codeforces", "ghostmikz"),
+    ("kv", "Instagram", "@mugetsu.zen"),
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Competitive programmer: Codeforces & LeetCode"),
@@ -114,7 +121,7 @@ ART_X = PAD
 ART_TOP = TITLEBAR_H + (BODY_H - ART_H) / 2
 
 CARD_X = PAD + ART_W + GAP
-CARD_TOP = ART_TOP  # top-align with the portrait instead of centering
+CARD_TOP = TITLEBAR_H + max(0, (BODY_H - content_h) / 2)
 
 DIVIDER_X = PAD + ART_W + GAP / 2
 
