@@ -34,7 +34,7 @@ GREEN = "#3fb950"
 ACCENT = "#22d3ee"
 
 # ---- left column: ascii portrait ---------------------------------------
-COLS, ROWS = 60, 32
+COLS, ROWS = 100, 53
 CELL_W, CELL_H = 8, 15
 RAMP = " .`:-=+*cs#%@"
 CONTRAST, GAMMA, WHITE_FLOOR = 1.25, 1.1, 0.78
