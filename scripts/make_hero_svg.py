@@ -34,7 +34,7 @@ GREEN = "#3fb950"
 ACCENT = "#22d3ee"
 
 # ---- left column: ascii portrait ---------------------------------------
-COLS, ROWS = 66, 35
+COLS, ROWS = 92, 49
 CELL_W, CELL_H = 8, 15
 RAMP = " .`:-=+*cs#%@"
 CONTRAST, GAMMA, WHITE_FLOOR = 1.05, 1.18, 0.80
@@ -59,13 +59,13 @@ for y in range(ROWS):
     rows_txt.append("".join(chars))
 
 # ---- right column: neofetch rows ---------------------------------------
-CARD_W = 640
+CARD_W = 700
 KEY_X = 0
-VAL_X = 140
-LINE_H = 32.0
-FONT_KV = 19.0
-FONT_SEC = 17.5
-FONT_HOST = 21.0
+VAL_X = 150
+LINE_H = 39.0
+FONT_KV = 23.0
+FONT_SEC = 21.0
+FONT_HOST = 25.0
 
 ROWS_INFO = [
     ("host",),
