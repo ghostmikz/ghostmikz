@@ -216,12 +216,18 @@ for i, row in enumerate(ROWS_INFO):
     y += LINE_H
 
 # ---- shared bottom status bar ------------------------------------------
+STATUS_FONT = 20
+STATUS_CELL_W = STATUS_FONT * 0.62  # monospace advance width, matches portrait's ratio
+STATUS_TEXT = "ghostmikz@github:~$ whoami Chingunjav (ghostmikz)"
+status_text_w = len(STATUS_TEXT) * STATUS_CELL_W
+
 status_line_y = TITLEBAR_H + BODY_H + PAD * 0.2
 status_y = status_line_y + 32
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W:.0f}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
-parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="20">'
+parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="{STATUS_FONT}" '
+             f'textLength="{status_text_w:.1f}" lengthAdjust="spacing" xml:space="preserve">'
              f'ghostmikz@github:~$ whoami <tspan fill="{INK}">Chingunjav (ghostmikz)</tspan></text>')
-parts.append(f'<rect x="{PAD+408}" y="{status_y-18:.1f}" width="11" height="21" fill="{INK}">'
+parts.append(f'<rect x="{PAD+status_text_w+6:.1f}" y="{status_y-18:.1f}" width="11" height="21" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 
