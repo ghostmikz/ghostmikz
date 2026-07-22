@@ -63,7 +63,7 @@ for y in range(ROWS):
 CARD_W = 740
 KEY_X = 0
 VAL_X = 150
-LINE_H = 30.0
+LINE_H = 40.0
 FONT_KV = 21.0
 FONT_SEC = 19.0
 FONT_HOST = 24.0
