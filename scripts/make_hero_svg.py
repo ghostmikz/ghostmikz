@@ -60,13 +60,13 @@ for y in range(ROWS):
     rows_txt.append("".join(chars))
 
 # ---- right column: neofetch rows ---------------------------------------
-CARD_W = 960
+CARD_W = 880
 KEY_X = 0
-VAL_X = 210
+VAL_X = 185
 LINE_H = 54.0
-FONT_KV = 32.0
-FONT_SEC = 29.0
-FONT_HOST = 36.0
+FONT_KV = 26.0
+FONT_SEC = 24.0
+FONT_HOST = 30.0
 
 ROWS_INFO = [
     ("host",),
