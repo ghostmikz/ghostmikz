@@ -19,8 +19,8 @@ STATIC = bool(os.environ.get("STATIC"))
 
 # ---- shared chrome ----------------------------------------------------
 PAD = 24
-TITLEBAR_H = 42
-STATUS_H = 46
+TITLEBAR_H = 90
+STATUS_H = 92
 GAP = 44  # space between the two columns (divider line runs through it)
 
 BG = "#0d1117"
@@ -60,13 +60,13 @@ for y in range(ROWS):
     rows_txt.append("".join(chars))
 
 # ---- right column: neofetch rows ---------------------------------------
-CARD_W = 820
+CARD_W = 960
 KEY_X = 0
-VAL_X = 180
-LINE_H = 46.5
-FONT_KV = 27.5
-FONT_SEC = 25.0
-FONT_HOST = 30.0
+VAL_X = 210
+LINE_H = 54.0
+FONT_KV = 32.0
+FONT_SEC = 29.0
+FONT_HOST = 36.0
 
 ROWS_INFO = [
     ("host",),
@@ -141,8 +141,8 @@ parts = [
     f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W:.0f}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
 ]
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
-    parts.append(f'<circle cx="{PAD + i*20}" cy="{TITLEBAR_H/2}" r="6.5" fill="{dotcol}"/>')
-parts.append(f'<text x="{CANVAS_W/2:.0f}" y="{TITLEBAR_H/2 + 6}" fill="{MUTED}" font-size="17" '
+    parts.append(f'<circle cx="{PAD + i*43}" cy="{TITLEBAR_H/2}" r="14" fill="{dotcol}"/>')
+parts.append(f'<text x="{CANVAS_W/2:.0f}" y="{TITLEBAR_H/2 + 13}" fill="{MUTED}" font-size="36" '
              f'text-anchor="middle">ghostmikz@github: ~$ whoami</text>')
 
 # vertical divider between the two columns
@@ -201,8 +201,8 @@ for i, row in enumerate(ROWS_INFO):
                  f'<text x="{x0+VAL_X}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{val}</text>')
     elif kind == "bul":
         txt = esc(row[1])
-        inner = (f'<circle cx="{x0+3.5}" cy="{y-5:.1f}" r="3" fill="{GREEN}"/>'
-                 f'<text x="{x0+16}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{txt}</text>')
+        inner = (f'<circle cx="{x0+FONT_KV*0.19:.1f}" cy="{y-5:.1f}" r="{FONT_KV*0.19:.1f}" fill="{GREEN}"/>'
+                 f'<text x="{x0+FONT_KV:.0f}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{txt}</text>')
     else:
         continue
     parts.append(rise(inner, i))
@@ -210,11 +210,11 @@ for i, row in enumerate(ROWS_INFO):
 
 # ---- shared bottom status bar ------------------------------------------
 status_line_y = TITLEBAR_H + BODY_H + PAD * 0.2
-status_y = status_line_y + 28
+status_y = status_line_y + 56
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W:.0f}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
-parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="18">'
+parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="36">'
              f'ghostmikz@github:~$ whoami <tspan fill="{INK}">Chingunjav (ghostmikz)</tspan></text>')
-parts.append(f'<rect x="{PAD+368}" y="{status_y-16:.1f}" width="10" height="19" fill="{INK}">'
+parts.append(f'<rect x="{PAD+736}" y="{status_y-32:.1f}" width="20" height="38" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 
