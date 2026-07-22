@@ -79,7 +79,7 @@ ROWS_INFO = [
     ("sec", "Stack"),
     ("kv", "Languages", "C, C++, C#, Java, JavaScript"),
     ("kv", "Web", "HTML, CSS, Blazor, .NET"),
-    ("kv", "Databases", "MySQL"),
+    ("kv", "Databases", "MySQL, MSSQL"),
     ("kv", "Tools", "Docker, Git, Vim, VS Code"),
     ("gap",),
     ("sec", "Connect"),
@@ -106,7 +106,7 @@ def measure(rows):
         if row[0] == "gap":
             y += LINE_H * 0.5
         else:
-            y += LINE_H
+            y += LINE_H + (8 if row[0] == "host" else 0)
     return y
 
 
@@ -213,7 +213,7 @@ for i, row in enumerate(ROWS_INFO):
     else:
         continue
     parts.append(rise(inner, i))
-    y += LINE_H
+    y += LINE_H + (8 if kind == "host" else 0)
 
 # ---- shared bottom status bar ------------------------------------------
 STATUS_FONT = 20
