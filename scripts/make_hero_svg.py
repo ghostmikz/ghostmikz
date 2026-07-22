@@ -60,13 +60,13 @@ for y in range(ROWS):
     rows_txt.append("".join(chars))
 
 # ---- right column: neofetch rows ---------------------------------------
-CARD_W = 880
+CARD_W = 740
 KEY_X = 0
-VAL_X = 185
-LINE_H = 38.0
-FONT_KV = 26.0
-FONT_SEC = 24.0
-FONT_HOST = 30.0
+VAL_X = 150
+LINE_H = 30.0
+FONT_KV = 21.0
+FONT_SEC = 19.0
+FONT_HOST = 24.0
 
 ROWS_INFO = [
     ("host",),
@@ -114,7 +114,7 @@ ART_X = PAD
 ART_TOP = TITLEBAR_H + (BODY_H - ART_H) / 2
 
 CARD_X = PAD + ART_W + GAP
-CARD_TOP = TITLEBAR_H + max(0, (BODY_H - content_h) / 2)
+CARD_TOP = ART_TOP  # top-align with the portrait instead of centering
 
 DIVIDER_X = PAD + ART_W + GAP / 2
 
