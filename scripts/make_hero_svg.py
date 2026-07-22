@@ -195,13 +195,13 @@ for i, row in enumerate(ROWS_INFO):
         inner = (f'<text x="{x0}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700">'
                  f'<tspan fill="{GREEN}">ghostmikz</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
-                 f'<line x1="{x0 + len(host_text)*FONT_HOST*0.63:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
+                 f'<line x1="{x0 + len(host_text)*FONT_HOST*0.63 + 6:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "sec":
         title = esc(row[1])
         inner = (f'<text x="{x0}" y="{y:.1f}" fill="{SECTION}" font-size="{FONT_SEC}" font-weight="700">'
                  f'&#8212; {title}</text>'
-                 f'<line x1="{x0 + FONT_SEC*0.9 + len(row[1])*FONT_SEC*0.63:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
+                 f'<line x1="{x0 + FONT_SEC*0.9 + len(row[1])*FONT_SEC*0.63 + 6:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "kv":
         key, val = esc(row[1]), esc(row[2])
