@@ -158,7 +158,7 @@ parts = [
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*24}" cy="{TITLEBAR_H/2}" r="8" fill="{dotcol}"/>')
 parts.append(f'<text x="{CANVAS_W/2:.0f}" y="{TITLEBAR_H/2 + 7}" fill="{MUTED}" font-size="20" '
-             f'text-anchor="middle">ghostmikz@github: ~$ whoami</text>')
+             f'text-anchor="middle">ghostmikz@github:~$ whoami</text>')
 
 # vertical divider between the two columns
 parts.append(f'<line x1="{DIVIDER_X:.1f}" y1="{TITLEBAR_H+12}" x2="{DIVIDER_X:.1f}" '
@@ -172,7 +172,7 @@ for ry, line in enumerate(rows_txt):
     delay = ry * STAGGER
     safe = esc(line)
     text = (f'<text xml:space="preserve" x="{ART_X}" y="{y:.1f}" fill="{INK}" '
-            f'font-size="{font_size:.1f}" textLength="{ART_W}" lengthAdjust="spacing">{safe}</text>')
+            f'font-size="{font_size:.1f}" textLength="{ART_W}" lengthAdjust="spacingAndGlyphs">{safe}</text>')
     if STATIC:
         parts.append(text)
         continue
@@ -205,7 +205,7 @@ for i, row in enumerate(ROWS_INFO):
         host_text = "ghostmikz@github"
         host_w = len(host_text) * FONT_HOST * MONO_RATIO
         inner = (f'<text x="{x0}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700" '
-                 f'textLength="{host_w:.1f}" lengthAdjust="spacing">'
+                 f'textLength="{host_w:.1f}" lengthAdjust="spacingAndGlyphs">'
                  f'<tspan fill="{GREEN}">ghostmikz</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
                  f'<line x1="{x0 + host_w + DIVIDER_GAP:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
@@ -215,7 +215,7 @@ for i, row in enumerate(ROWS_INFO):
         sec_text = f"— {row[1]}"
         sec_w = len(sec_text) * FONT_SEC * MONO_RATIO
         inner = (f'<text x="{x0}" y="{y:.1f}" fill="{SECTION}" font-size="{FONT_SEC}" font-weight="700" '
-                 f'textLength="{sec_w:.1f}" lengthAdjust="spacing">'
+                 f'textLength="{sec_w:.1f}" lengthAdjust="spacingAndGlyphs">'
                  f'&#8212; {title}</text>'
                  f'<line x1="{x0 + sec_w + DIVIDER_GAP:.0f}" y1="{y-5:.1f}" x2="{x0+CARD_W}" y2="{y-5:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
@@ -242,7 +242,7 @@ status_line_y = TITLEBAR_H + BODY_H + PAD * 0.2
 status_y = status_line_y + 32
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W:.0f}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
 parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="{STATUS_FONT}" '
-             f'textLength="{status_text_w:.1f}" lengthAdjust="spacing" xml:space="preserve">'
+             f'textLength="{status_text_w:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve">'
              f'ghostmikz@github:~$ whoami <tspan fill="{INK}">Chingunjav (ghostmikz)</tspan></text>')
 cursor_w, cursor_h = STATUS_FONT * 0.55, STATUS_FONT * 1.05
 parts.append(f'<rect class="cursor" x="{PAD+status_text_w+6:.1f}" y="{status_y-cursor_h*0.86:.1f}" '
