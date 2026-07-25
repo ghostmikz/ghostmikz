@@ -61,7 +61,6 @@ for y in range(ROWS):
 
 # ---- right column: neofetch rows ---------------------------------------
 CARD_W = 740
-KEY_X = 0
 VAL_X = 150
 LINE_H = 30.0
 FONT_KV = 21.0
@@ -130,7 +129,7 @@ def rise(inner, i):
     if STATIC:
         return f"<g>{inner}</g>"
     delay = 0.15 + i * 0.05
-    return (f'<g opacity="0" transform="translate(0,5)">{inner}'
+    return (f'<g class="reveal" opacity="0" transform="translate(0,5)">{inner}'
             f'<animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.4s" fill="freeze"/>'
             f'<animateTransform attributeName="transform" type="translate" from="0 5" to="0 0" '
             f'begin="{delay:.2f}s" dur="0.4s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></g>')
@@ -143,6 +142,15 @@ parts = [
     '<defs>'
     f'<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
     f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/></linearGradient></defs>',
+    f'<style>@media (prefers-reduced-motion: reduce) {{'
+    f'.reveal {{ opacity: 1 !important; transform: none !important; }}'
+    f'.reveal > animate, .reveal > animateTransform {{ display: none; }}'
+    f'.row-clip {{ width: {ART_W}px !important; }}'
+    f'.row-clip > animate {{ display: none; }}'
+    f'.row-scan {{ display: none; }}'
+    f'.cursor {{ opacity: 1 !important; }}'
+    f'.cursor > animate {{ display: none; }}'
+    f'}}</style>',
     f'<rect width="{CANVAS_W:.0f}" height="{CANVAS_H:.0f}" rx="12" fill="url(#bg)"/>',
     f'<rect x="0.5" y="0.5" width="{CANVAS_W-1:.0f}" height="{CANVAS_H-1:.0f}" rx="12" fill="none" stroke="{FRAME}"/>',
     f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W:.0f}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
@@ -162,20 +170,20 @@ for ry, line in enumerate(rows_txt):
     y = ART_TOP + ry * CELL_H + CELL_H * 0.74
     row_y = ART_TOP + ry * CELL_H
     delay = ry * STAGGER
-    safe = html.escape(line)
+    safe = esc(line)
     text = (f'<text xml:space="preserve" x="{ART_X}" y="{y:.1f}" fill="{INK}" '
             f'font-size="{font_size:.1f}" textLength="{ART_W}" lengthAdjust="spacing">{safe}</text>')
     if STATIC:
         parts.append(text)
         continue
     parts.append(
-        f'<clipPath id="r{ry}"><rect x="{ART_X}" y="{row_y:.1f}" height="{CELL_H}" width="0">'
+        f'<clipPath id="r{ry}"><rect class="row-clip" x="{ART_X}" y="{row_y:.1f}" height="{CELL_H}" width="0">'
         f'<animate attributeName="width" from="0" to="{ART_W}" begin="{delay:.3f}s" '
         f'dur="{ROW_DUR:.2f}s" fill="freeze"/></rect></clipPath>'
     )
     parts.append(f'<g clip-path="url(#r{ry})">{text}</g>')
     parts.append(
-        f'<rect y="{row_y+1:.1f}" width="{CELL_W}" height="{CELL_H-2}" fill="{INK}" opacity="0">'
+        f'<rect class="row-scan" y="{row_y+1:.1f}" width="{CELL_W}" height="{CELL_H-2}" fill="{INK}" opacity="0">'
         f'<animate attributeName="x" from="{ART_X}" to="{ART_X+ART_W}" begin="{delay:.3f}s" '
         f'dur="{ROW_DUR:.2f}s" fill="freeze"/>'
         f'<set attributeName="opacity" to="0.85" begin="{delay:.3f}s"/>'
@@ -236,7 +244,9 @@ parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W:.0f}" y2="{st
 parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{MUTED}" font-size="{STATUS_FONT}" '
              f'textLength="{status_text_w:.1f}" lengthAdjust="spacing" xml:space="preserve">'
              f'ghostmikz@github:~$ whoami <tspan fill="{INK}">Chingunjav (ghostmikz)</tspan></text>')
-parts.append(f'<rect x="{PAD+status_text_w+6:.1f}" y="{status_y-18:.1f}" width="11" height="21" fill="{INK}">'
+cursor_w, cursor_h = STATUS_FONT * 0.55, STATUS_FONT * 1.05
+parts.append(f'<rect class="cursor" x="{PAD+status_text_w+6:.1f}" y="{status_y-cursor_h*0.86:.1f}" '
+             f'width="{cursor_w:.1f}" height="{cursor_h:.1f}" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 
