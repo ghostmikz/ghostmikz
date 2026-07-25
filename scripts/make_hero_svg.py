@@ -10,11 +10,14 @@ STATIC=1 emits the frozen (no-animation) state for quick previews.
 """
 from PIL import Image, ImageEnhance, ImageFilter
 import html
+import json
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "..", "source-prepped.png")
 OUT = os.path.join(HERE, "..", "hero.svg")
+ASCII_CACHE = os.path.join(HERE, "..", "ascii_rows.json")
+LANG_DATA = os.path.join(HERE, "..", "languages.json")
 STATIC = bool(os.environ.get("STATIC"))
 
 # ---- shared chrome ----------------------------------------------------
@@ -41,31 +44,48 @@ CONTRAST, GAMMA, WHITE_FLOOR = 1.25, 1.1, 0.78
 ART_W, ART_H = COLS * CELL_W, ROWS * CELL_H
 ROW_DUR = STAGGER = 0.11
 
-im = Image.open(SRC).convert("L")
-im = im.filter(ImageFilter.UnsharpMask(radius=3, percent=180, threshold=2))
-im = ImageEnhance.Contrast(im).enhance(CONTRAST)
-im = im.resize((COLS, ROWS), Image.LANCZOS)
-px = im.load()
+if os.path.exists(SRC):
+    # source photo changed (or first run) -- reconvert and refresh the cache
+    # that CI relies on, since the source image itself isn't committed.
+    im = Image.open(SRC).convert("L")
+    im = im.filter(ImageFilter.UnsharpMask(radius=3, percent=180, threshold=2))
+    im = ImageEnhance.Contrast(im).enhance(CONTRAST)
+    im = im.resize((COLS, ROWS), Image.LANCZOS)
+    px = im.load()
 
-rows_txt = []
-for y in range(ROWS):
-    chars = []
-    for x in range(COLS):
-        lum = pow(px[x, y] / 255.0, GAMMA)
-        if lum >= WHITE_FLOOR:
-            chars.append(" ")
-            continue
-        idx = max(0, min(len(RAMP) - 1, int((1.0 - lum) * (len(RAMP) - 1) + 0.5)))
-        chars.append(RAMP[idx])
-    rows_txt.append("".join(chars))
+    rows_txt = []
+    for y in range(ROWS):
+        chars = []
+        for x in range(COLS):
+            lum = pow(px[x, y] / 255.0, GAMMA)
+            if lum >= WHITE_FLOOR:
+                chars.append(" ")
+                continue
+            idx = max(0, min(len(RAMP) - 1, int((1.0 - lum) * (len(RAMP) - 1) + 0.5)))
+            chars.append(RAMP[idx])
+        rows_txt.append("".join(chars))
+
+    with open(ASCII_CACHE, "w") as f:
+        json.dump(rows_txt, f)
+else:
+    with open(ASCII_CACHE) as f:
+        rows_txt = json.load(f)
 
 # ---- right column: neofetch rows ---------------------------------------
 CARD_W = 740
 VAL_X = 150
+BAR_W = 500
+BAR_H = 14
 LINE_H = 30.0
 FONT_KV = 21.0
 FONT_SEC = 19.0
 FONT_HOST = 24.0
+
+with open(LANG_DATA) as f:
+    _lang_data = json.load(f)
+LANG_BAR_ROWS = [("bar", l["name"], l["pct"], l["color"]) for l in _lang_data["languages"]]
+if _lang_data.get("other_pct", 0) >= 0.5:
+    LANG_BAR_ROWS.append(("bar", "Other", _lang_data["other_pct"], MUTED))
 
 ROWS_INFO = [
     ("host",),
@@ -76,7 +96,7 @@ ROWS_INFO = [
     ("kv", "Workflow", "Terminal-centric, 163 WPM"),
     ("gap",),
     ("sec", "Stack"),
-    ("kv", "Languages", "C, C++, C#, Java, JavaScript"),
+    *LANG_BAR_ROWS,
     ("kv", "Web", "HTML, CSS, Blazor, .NET"),
     ("kv", "Databases", "MySQL, MSSQL"),
     ("kv", "Tools", "Docker, Git, Vim, VS Code"),
@@ -223,6 +243,15 @@ for i, row in enumerate(ROWS_INFO):
         key, val = esc(row[1]), esc(row[2])
         inner = (f'<text x="{x0}" y="{y:.1f}" fill="{KEY}" font-size="{FONT_KV}" font-weight="700">{key}</text>'
                  f'<text x="{x0+VAL_X}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{val}</text>')
+    elif kind == "bar":
+        name, pct, color = esc(row[1]), row[2], row[3]
+        bar_x = x0 + VAL_X
+        fill_w = BAR_W * pct / 100
+        inner = (f'<text x="{x0}" y="{y:.1f}" fill="{KEY}" font-size="{FONT_KV}" font-weight="700">{name}</text>'
+                 f'<rect x="{bar_x}" y="{y-11:.1f}" width="{BAR_W}" height="{BAR_H}" rx="3" '
+                 f'fill="{FRAME}" fill-opacity="0.5"/>'
+                 f'<rect x="{bar_x}" y="{y-11:.1f}" width="{fill_w:.1f}" height="{BAR_H}" rx="3" fill="{color}"/>'
+                 f'<text x="{bar_x+BAR_W+14:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">{pct:.0f}%</text>')
     elif kind == "bul":
         txt = esc(row[1])
         inner = (f'<circle cx="{x0+FONT_KV*0.19:.1f}" cy="{y-5:.1f}" r="{FONT_KV*0.19:.1f}" fill="{GREEN}"/>'

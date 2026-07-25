@@ -1,0 +1,30 @@
+{
+  "languages": [
+    {
+      "name": "Java",
+      "pct": 57.0,
+      "color": "#b07219"
+    },
+    {
+      "name": "TypeScript",
+      "pct": 28.8,
+      "color": "#3178c6"
+    },
+    {
+      "name": "CSS",
+      "pct": 6.7,
+      "color": "#563d7c"
+    },
+    {
+      "name": "HTML",
+      "pct": 2.1,
+      "color": "#e34c26"
+    },
+    {
+      "name": "C++",
+      "pct": 1.7,
+      "color": "#f34b7d"
+    }
+  ],
+  "other_pct": 3.7
+}
