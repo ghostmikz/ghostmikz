@@ -74,8 +74,11 @@ else:
 # ---- right column: neofetch rows ---------------------------------------
 CARD_W = 740
 VAL_X = 150
-BAR_W = 500
+BAR_W = 380
 BAR_H = 14
+BAR_SEGS = 16
+BAR_SEG_GAP = 3
+BAR_TRACK = "#21262d"
 LINE_H = 30.0
 FONT_KV = 21.0
 FONT_SEC = 19.0
@@ -90,27 +93,24 @@ if _lang_data.get("other_pct", 0) >= 0.5:
 ROWS_INFO = [
     ("host",),
     ("kv", "Now", "Software Engineer @ Smart Retail Systems"),
+    ("kv", "Location", "Ulaanbaatar, Mongolia"),
     ("kv", "Focus", "Backend Logic, Algorithmic Efficiency"),
     ("kv", "Edu", "B.Eng Software Engineering, NMIT '28"),
     ("kv", "Systems", "Fedora (Sway), Debian (GNOME)"),
     ("kv", "Workflow", "Terminal-centric, 163 WPM"),
     ("gap",),
-    ("sec", "Stack"),
+    ("sec", "Languages"),
     *LANG_BAR_ROWS,
-    ("kv", "Web", "HTML, CSS, Blazor, .NET"),
+    ("gap",),
+    ("sec", "Stack"),
+    ("kv", "Frameworks", "Blazor, .NET, Swing, WinForms"),
     ("kv", "Databases", "MySQL, MSSQL"),
-    ("kv", "Tools", "Docker, Git, Vim, VS Code"),
+    ("kv", "Tools", "Docker, Git, Azure DevOps"),
     ("gap",),
     ("sec", "Connect"),
     ("kv", "Mail", "chingunjav.ariuntur@gmail.com"),
     ("kv", "LinkedIn", "/in/ghostmikz"),
-    ("kv", "LeetCode", "u/ghostmikz"),
-    ("kv", "Codeforces", "ghostmikz"),
     ("kv", "Instagram", "@mugetsu.zen"),
-    ("gap",),
-    ("sec", "Highlights"),
-    ("bul", "Competitive programmer: Codeforces & LeetCode"),
-    ("bul", "Open to open-source contributions"),
 ]
 
 
@@ -246,16 +246,18 @@ for i, row in enumerate(ROWS_INFO):
     elif kind == "bar":
         name, pct, color = esc(row[1]), row[2], row[3]
         bar_x = x0 + VAL_X
-        fill_w = BAR_W * pct / 100
+        seg_w = (BAR_W - (BAR_SEGS - 1) * BAR_SEG_GAP) / BAR_SEGS
+        filled = round(BAR_SEGS * pct / 100)
+        segs = "".join(
+            f'<rect x="{bar_x + s*(seg_w+BAR_SEG_GAP):.1f}" y="{y-11:.1f}" width="{seg_w:.1f}" height="{BAR_H}" '
+            f'fill="{color if s < filled else BAR_TRACK}"/>'
+            for s in range(BAR_SEGS)
+        )
         inner = (f'<text x="{x0}" y="{y:.1f}" fill="{KEY}" font-size="{FONT_KV}" font-weight="700">{name}</text>'
-                 f'<rect x="{bar_x}" y="{y-11:.1f}" width="{BAR_W}" height="{BAR_H}" rx="3" '
-                 f'fill="{FRAME}" fill-opacity="0.5"/>'
-                 f'<rect x="{bar_x}" y="{y-11:.1f}" width="{fill_w:.1f}" height="{BAR_H}" rx="3" fill="{color}"/>'
-                 f'<text x="{bar_x+BAR_W+14:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">{pct:.0f}%</text>')
-    elif kind == "bul":
-        txt = esc(row[1])
-        inner = (f'<circle cx="{x0+FONT_KV*0.19:.1f}" cy="{y-5:.1f}" r="{FONT_KV*0.19:.1f}" fill="{GREEN}"/>'
-                 f'<text x="{x0+FONT_KV:.0f}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{txt}</text>')
+                 f'<text x="{bar_x-14:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">[</text>'
+                 f'{segs}'
+                 f'<text x="{bar_x+BAR_W+6:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">]</text>'
+                 f'<text x="{bar_x+BAR_W+26:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">{pct:.0f}%</text>')
     else:
         continue
     parts.append(rise(inner, i))
