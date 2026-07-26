@@ -51,6 +51,11 @@ for name in repos:
         totals[lang] = totals.get(lang, 0) + n
 
 total_bytes = sum(totals.values())
+# bail rather than write an empty chart: a throttled or half-failed API run
+# would otherwise blank out languages.json and the workflow would commit it
+if not total_bytes:
+    raise SystemExit(f"no language bytes across {len(repos)} repos -- leaving {OUT} untouched")
+
 ranked = sorted(totals.items(), key=lambda kv: -kv[1])
 top, rest = ranked[:TOP_N], ranked[TOP_N:]
 
@@ -59,7 +64,7 @@ data = {
         {"name": lang, "pct": round(100.0 * n / total_bytes, 1), "color": LINGUIST_COLORS.get(lang, DEFAULT_COLOR)}
         for lang, n in top
     ],
-    "other_pct": round(100.0 * sum(n for _, n in rest) / total_bytes, 1) if total_bytes else 0.0,
+    "other_pct": round(100.0 * sum(n for _, n in rest) / total_bytes, 1),
 }
 
 with open(OUT, "w") as f:

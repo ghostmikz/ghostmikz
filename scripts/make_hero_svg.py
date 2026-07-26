@@ -39,6 +39,10 @@ ACCENT = "#22d3ee"
 # ---- left column: ascii portrait ---------------------------------------
 COLS, ROWS = 100, 53
 CELL_W, CELL_H = 8, 15
+FONT_RATIO = 0.86  # portrait glyph size relative to its cell height
+# advance width per em, derived from the portrait grid so the card and status
+# bar can't drift out of step with it (every textLength below uses this)
+MONO_RATIO = CELL_W / (CELL_H * FONT_RATIO)
 RAMP = " .`:-=+*cs#%@"
 CONTRAST, GAMMA, WHITE_FLOOR = 1.25, 1.1, 0.78
 ART_W, ART_H = COLS * CELL_W, ROWS * CELL_H
@@ -185,7 +189,7 @@ parts.append(f'<line x1="{DIVIDER_X:.1f}" y1="{TITLEBAR_H+12}" x2="{DIVIDER_X:.1
              f'y2="{TITLEBAR_H+BODY_H-12:.1f}" stroke="{FRAME}" stroke-opacity="0.7"/>')
 
 # ---- left: ascii portrait ------------------------------------------------
-font_size = CELL_H * 0.86
+font_size = CELL_H * FONT_RATIO
 for ry, line in enumerate(rows_txt):
     y = ART_TOP + ry * CELL_H + CELL_H * 0.74
     row_y = ART_TOP + ry * CELL_H
@@ -211,7 +215,6 @@ for ry, line in enumerate(rows_txt):
     )
 
 # ---- right: neofetch card --------------------------------------------
-MONO_RATIO = 0.6  # forced monospace advance width (via textLength) for exact divider alignment
 DIVIDER_GAP = 6
 
 y = CARD_TOP + LINE_H * 0.75
@@ -247,7 +250,9 @@ for i, row in enumerate(ROWS_INFO):
         name, pct, color = esc(row[1]), row[2], row[3]
         bar_x = x0 + VAL_X
         seg_w = (BAR_W - (BAR_SEGS - 1) * BAR_SEG_GAP) / BAR_SEGS
-        filled = round(BAR_SEGS * pct / 100)
+        # a listed language always gets at least one lit segment -- rounding to
+        # zero reads as "failed to load" rather than "small share"
+        filled = max(1, round(BAR_SEGS * pct / 100)) if pct > 0 else 0
         segs = "".join(
             f'<rect x="{bar_x + s*(seg_w+BAR_SEG_GAP):.1f}" y="{y-11:.1f}" width="{seg_w:.1f}" height="{BAR_H}" '
             f'fill="{color if s < filled else BAR_TRACK}"/>'
@@ -265,7 +270,7 @@ for i, row in enumerate(ROWS_INFO):
 
 # ---- shared bottom status bar ------------------------------------------
 STATUS_FONT = 20
-STATUS_CELL_W = STATUS_FONT * 0.62  # monospace advance width, matches portrait's ratio
+STATUS_CELL_W = STATUS_FONT * MONO_RATIO
 STATUS_TEXT = "ghostmikz@github:~$ whoami Chingunjav (ghostmikz)"
 status_text_w = len(STATUS_TEXT) * STATUS_CELL_W
 
