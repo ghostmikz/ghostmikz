@@ -122,15 +122,17 @@ def esc(s):
     return html.escape(s)
 
 
+# vertical space a row consumes. the single source of truth for card spacing --
+# measure() and the render loop below must stay in step, so both call this.
+def advance(kind):
+    if kind == "gap":
+        return LINE_H * 0.5
+    return LINE_H + (8 if kind == "host" else 0)
+
+
 # measure pure content height (no starting offset) so it can be centered
 def measure(rows):
-    y = 0.0
-    for row in rows:
-        if row[0] == "gap":
-            y += LINE_H * 0.5
-        else:
-            y += LINE_H + (8 if row[0] == "host" else 0)
-    return y
+    return sum(advance(row[0]) for row in rows)
 
 
 content_h = measure(ROWS_INFO)
@@ -221,7 +223,7 @@ y = CARD_TOP + LINE_H * 0.75
 for i, row in enumerate(ROWS_INFO):
     kind = row[0]
     if kind == "gap":
-        y += LINE_H * 0.5
+        y += advance(kind)
         continue
     x0 = CARD_X
     if kind == "host":
@@ -266,7 +268,7 @@ for i, row in enumerate(ROWS_INFO):
     else:
         continue
     parts.append(rise(inner, i))
-    y += LINE_H + (8 if kind == "host" else 0)
+    y += advance(kind)
 
 # ---- shared bottom status bar ------------------------------------------
 STATUS_FONT = 20
