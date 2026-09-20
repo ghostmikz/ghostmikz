@@ -2,29 +2,29 @@
   "languages": [
     {
       "name": "Java",
-      "pct": 53.0,
+      "pct": 51.2,
       "color": "#b07219"
     },
     {
       "name": "TypeScript",
-      "pct": 26.8,
+      "pct": 25.9,
       "color": "#3178c6"
     },
     {
       "name": "Python",
-      "pct": 7.5,
+      "pct": 7.3,
       "color": "#3572A5"
     },
     {
       "name": "CSS",
-      "pct": 6.3,
+      "pct": 6.0,
       "color": "#563d7c"
     },
     {
-      "name": "HTML",
-      "pct": 1.9,
-      "color": "#e34c26"
+      "name": "Rust",
+      "pct": 3.4,
+      "color": "#8b949e"
     }
   ],
-  "other_pct": 4.5
+  "other_pct": 6.2
 }
