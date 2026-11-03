@@ -4,6 +4,7 @@ GitHub API and write languages.json (top 5 + "Other"), consumed by
 make_hero_svg.py. Run manually, or automatically by
 .github/workflows/update-languages.yml on a schedule.
 """
+import datetime
 import json
 import os
 import urllib.request
@@ -13,13 +14,14 @@ TOP_N = 5
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "languages.json")
+STATS_OUT = os.path.join(HERE, "..", "stats.json")
 
 # github/linguist's canonical per-language colors (same ones GitHub's own
 # repo language bar uses), so this matches GitHub's own convention.
 LINGUIST_COLORS = {
     "Java": "#b07219", "TypeScript": "#3178c6", "CSS": "#563d7c", "HTML": "#e34c26",
     "C++": "#f34b7d", "C": "#555555", "JavaScript": "#f1e05a", "Python": "#3572A5",
-    "C#": "#178600", "Shell": "#89e051", "Batchfile": "#C1F12E", "Dockerfile": "#384d54",
+    "C#": "#178600", "Rust": "#dea584", "PHP": "#4F5D95", "Shell": "#89e051", "Batchfile": "#C1F12E", "Dockerfile": "#384d54",
 }
 DEFAULT_COLOR = "#8b949e"
 
@@ -70,3 +72,25 @@ data = {
 with open(OUT, "w") as f:
     json.dump(data, f, indent=2)
 print("wrote", OUT, data)
+
+
+# ---- activity: contributions this calendar year (GraphQL) -------------
+# kept separate and non-fatal: if this query fails, the old stats.json stays
+# and the language update above still goes through.
+year = datetime.datetime.now(datetime.timezone.utc).year
+query = (f'{{ user(login: "{USER}") {{ contributionsCollection(from: "{year}-01-01T00:00:00Z") '
+         f'{{ contributionCalendar {{ totalContributions }} }} }} }}')
+try:
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query}).encode(),
+        headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req) as resp:
+        res = json.load(resp)
+    total = res["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+    with open(STATS_OUT, "w") as f:
+        json.dump({"year": year, "contributions": total}, f, indent=2)
+    print("wrote", STATS_OUT, total, "contributions in", year)
+except Exception as e:  # noqa: BLE001 -- any failure just keeps the old file
+    print("activity fetch failed, keeping old stats.json:", e)

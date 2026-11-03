@@ -2,17 +2,17 @@
   "languages": [
     {
       "name": "Java",
-      "pct": 48.9,
+      "pct": 48.3,
       "color": "#b07219"
     },
     {
       "name": "TypeScript",
-      "pct": 26.6,
+      "pct": 26.3,
       "color": "#3178c6"
     },
     {
       "name": "Python",
-      "pct": 6.9,
+      "pct": 6.8,
       "color": "#3572A5"
     },
     {
@@ -22,9 +22,9 @@
     },
     {
       "name": "Rust",
-      "pct": 4.2,
-      "color": "#8b949e"
+      "pct": 4.1,
+      "color": "#dea584"
     }
   ],
-  "other_pct": 6.8
+  "other_pct": 7.8
 }

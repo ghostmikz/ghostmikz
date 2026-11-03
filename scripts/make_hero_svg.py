@@ -18,13 +18,14 @@ SRC = os.path.join(HERE, "..", "source-prepped.png")
 OUT = os.path.join(HERE, "..", "hero.svg")
 ASCII_CACHE = os.path.join(HERE, "..", "ascii_rows.json")
 LANG_DATA = os.path.join(HERE, "..", "languages.json")
+STATS_DATA = os.path.join(HERE, "..", "stats.json")
 STATIC = bool(os.environ.get("STATIC"))
 
 # ---- shared chrome ----------------------------------------------------
 PAD = 24
 TITLEBAR_H = 50
 STATUS_H = 52
-GAP = 44  # space between the two columns (divider line runs through it)
+GAP = 44  # space between the two columns
 
 BG = "#0d1117"
 BG2 = "#111722"
@@ -94,27 +95,43 @@ LANG_BAR_ROWS = [("bar", l["name"], l["pct"], l["color"]) for l in _lang_data["l
 if _lang_data.get("other_pct", 0) >= 0.5:
     LANG_BAR_ROWS.append(("bar", "Other", _lang_data["other_pct"], MUTED))
 
+# activity line is optional: no stats.json (or a broken one) just hides it
+ACTIVITY_ROWS = []
+try:
+    with open(STATS_DATA) as f:
+        _stats = json.load(f)
+    ACTIVITY_ROWS = [("kv", "Activity", f"{_stats['contributions']} contributions in {_stats['year']}")]
+except (OSError, ValueError, KeyError):
+    pass
+
+# neofetch's closing color strip: normal row, then bright row
+COLOR_ROWS = [
+    ["#484f58", "#ff7b72", "#3fb950", "#d29922", "#58a6ff", "#bc8cff", "#39c5cf", "#b1bac4"],
+    ["#6e7681", "#ffa198", "#56d364", "#e3b341", "#79c0ff", "#d2a8ff", "#56d4dd", "#f0f6fc"],
+]
+# like neofetch's "███" swatches: one text row tall, rows touching with no
+# gap, the way block glyphs render
+COLOR_BLOCK_H, COLOR_ROW_GAP = 22, 0
+
 ROWS_INFO = [
     ("host",),
     ("kv", "Now", "Software Engineer @ Smart Retail Systems"),
     ("kv", "Location", "Ulaanbaatar, Mongolia"),
-    ("kv", "Focus", "Backend Logic, Algorithmic Efficiency"),
+    ("kv", "Focus", "AI & Machine Learning, Backend"),
     ("kv", "Edu", "B.Eng Software Engineering, NMIT '28"),
     ("kv", "Systems", "Fedora (Sway), Debian (GNOME)"),
-    ("kv", "Workflow", "Terminal-centric, 163 WPM"),
+    *ACTIVITY_ROWS,
+    ("kv", "Open to", "Internships, Collaborations"),
     ("gap",),
     ("sec", "Languages"),
     *LANG_BAR_ROWS,
-    ("gap",),
-    ("sec", "Stack"),
-    ("kv", "Frameworks", "Blazor, .NET, Swing, WinForms"),
-    ("kv", "Databases", "MySQL, MSSQL"),
-    ("kv", "Tools", "Docker, Git, Azure DevOps"),
     ("gap",),
     ("sec", "Connect"),
     ("kv", "Mail", "chingunjav.ariuntur@gmail.com"),
     ("kv", "LinkedIn", "/in/ghostmikz"),
     ("kv", "Instagram", "@mugetsu.zen"),
+    ("gap",),
+    ("colors",),
 ]
 
 
@@ -127,6 +144,8 @@ def esc(s):
 def advance(kind):
     if kind == "gap":
         return LINE_H * 0.5
+    if kind == "colors":
+        return len(COLOR_ROWS) * (COLOR_BLOCK_H + COLOR_ROW_GAP) + 8
     return LINE_H + (8 if kind == "host" else 0)
 
 
@@ -148,7 +167,6 @@ ART_TOP = TITLEBAR_H + (BODY_H - ART_H) / 2
 CARD_X = PAD + ART_W + GAP
 CARD_TOP = TITLEBAR_H + max(0, (BODY_H - content_h) / 2)
 
-DIVIDER_X = PAD + ART_W + GAP / 2
 
 
 def rise(inner, i):
@@ -186,9 +204,6 @@ for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
 parts.append(f'<text x="{CANVAS_W/2:.0f}" y="{TITLEBAR_H/2 + 7}" fill="{MUTED}" font-size="20" '
              f'text-anchor="middle">ghostmikz@github:~$ whoami</text>')
 
-# vertical divider between the two columns
-parts.append(f'<line x1="{DIVIDER_X:.1f}" y1="{TITLEBAR_H+12}" x2="{DIVIDER_X:.1f}" '
-             f'y2="{TITLEBAR_H+BODY_H-12:.1f}" stroke="{FRAME}" stroke-opacity="0.7"/>')
 
 # ---- left: ascii portrait ------------------------------------------------
 font_size = CELL_H * FONT_RATIO
@@ -265,6 +280,15 @@ for i, row in enumerate(ROWS_INFO):
                  f'{segs}'
                  f'<text x="{bar_x+BAR_W+6:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">]</text>'
                  f'<text x="{bar_x+BAR_W+26:.1f}" y="{y:.1f}" fill="{MUTED}" font-size="{FONT_KV}">{pct:.0f}%</text>')
+    elif kind == "colors":
+        top = y - LINE_H * 0.55
+        # as wide as the language bars (key column to the closing "]")
+        COLOR_BLOCK_W = (VAL_X + BAR_W + 18) / len(COLOR_ROWS[0])
+        inner = "".join(
+            f'<rect x="{x0 + c*COLOR_BLOCK_W:.1f}" y="{top + r*(COLOR_BLOCK_H+COLOR_ROW_GAP):.1f}" '
+            f'width="{COLOR_BLOCK_W:.1f}" height="{COLOR_BLOCK_H}" fill="{col}"/>'
+            for r, row_cols in enumerate(COLOR_ROWS) for c, col in enumerate(row_cols)
+        )
     else:
         continue
     parts.append(rise(inner, i))
