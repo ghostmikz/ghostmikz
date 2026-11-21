@@ -22,6 +22,7 @@ LINGUIST_COLORS = {
     "Java": "#b07219", "TypeScript": "#3178c6", "CSS": "#563d7c", "HTML": "#e34c26",
     "C++": "#f34b7d", "C": "#555555", "JavaScript": "#f1e05a", "Python": "#3572A5",
     "C#": "#178600", "Rust": "#dea584", "PHP": "#4F5D95", "Shell": "#89e051", "Batchfile": "#C1F12E", "Dockerfile": "#384d54",
+    "Kotlin": "#A97BFF",
 }
 DEFAULT_COLOR = "#8b949e"
 
